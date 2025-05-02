@@ -21,7 +21,7 @@ namespace Payment.Domain.Tests
         public void GivenAValidPaymentTypeAndAmount_WhenProcessPayment_ResultIsSuccesful(int paymentType, double amount)
         {
             bool PaymentResult = new PaymentService().ProcessPayment(paymentType, amount);
-            Assert.IsTrue(PaymentResult);
+            Assert.That(PaymentResult, Is.True);
         }
 
         /// <summary>
