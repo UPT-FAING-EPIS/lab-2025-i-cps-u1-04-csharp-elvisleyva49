@@ -17,7 +17,7 @@ namespace ATM.Domain.Tests
             decimal amount = 100;
             var withdraw = new WithdrawCommand(account, amount);
             new ATM(withdraw).Action();
-            Assert.IsTrue(account.AccountBalance.Equals(200));
+            Assert.That(account.AccountBalance.Equals(200));
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace ATM.Domain.Tests
             decimal amount = 100;
             var deposit = new DepositCommand(account, amount);
             new ATM(deposit).Action();
-            Assert.IsTrue(account.AccountBalance.Equals(300));
+            Assert.That(account.AccountBalance.Equals(300));
         }
     }
 }

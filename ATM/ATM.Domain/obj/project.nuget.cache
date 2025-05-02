@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ERdWnHkzzZo=",
+  "dgSpecHash": "wDKmVZGEPbc=",
   "success": true,
-  "projectFilePath": "D:\\Biblioteca\\Documentos\\Lab_patrones\\lab4\\Payment\\ATM\\ATM.Domain\\ATM.Domain.csproj",
+  "projectFilePath": "D:\\Biblioteca\\Documentos\\Lab_patrones\\lab4\\ATM\\ATM.Domain\\ATM.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
