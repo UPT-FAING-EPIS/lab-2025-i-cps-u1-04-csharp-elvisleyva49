@@ -65,7 +65,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '9.0.x'
 
       - name: Restore dependencies for ATM.Domain
         run: dotnet restore ATM/ATM.Domain/ATM.Domain.csproj
@@ -114,7 +114,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '9.0.x'
 
       - name: Restore dependencies for Payment.Domain
         run: dotnet restore Payment/Payment.Domain/Payment.Domain.csproj
@@ -162,7 +162,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '9.0.x'
 
       - name: Restore dependencies for ATM.Domain
         run: dotnet restore ATM/ATM.Domain/ATM.Domain.csproj
