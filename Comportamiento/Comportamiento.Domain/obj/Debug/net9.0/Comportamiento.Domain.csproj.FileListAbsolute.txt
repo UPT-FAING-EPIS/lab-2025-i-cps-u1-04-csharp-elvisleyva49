@@ -1,0 +1,12 @@
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\bin\Debug\net9.0\Comportamiento.Domain.deps.json
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\bin\Debug\net9.0\Comportamiento.Domain.dll
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\bin\Debug\net9.0\Comportamiento.Domain.pdb
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.AssemblyInfoInputs.cache
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.AssemblyInfo.cs
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.csproj.CoreCompileInputs.cache
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.sourcelink.json
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.dll
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\refint\Comportamiento.Domain.dll
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\Comportamiento.Domain.pdb
+D:\Biblioteca\Documentos\Lab_patrones\lab4\Comportamiento\Comportamiento.Domain\obj\Debug\net9.0\ref\Comportamiento.Domain.dll

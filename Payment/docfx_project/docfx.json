@@ -1,0 +1,39 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["Payment.Domain/**/*.cs"],
+          "cwd": "."
+        },
+        {
+          "files": ["ATM.Domain/**/*.cs"],
+          "cwd": "."
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["api/**.yml", "api/index.md"]
+      },
+      {
+        "files": ["articles/**.md", "articles/**/toc.yml"],
+        "src": "articles",
+        "dest": "articles"
+      }
+    ],
+    "resource": [
+      {
+        "files": ["images/**"],
+        "exclude": ["**/bin/**", "**/obj/**"]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "Documentación de Patrones de Comportamiento"
+    }
+  }
+}

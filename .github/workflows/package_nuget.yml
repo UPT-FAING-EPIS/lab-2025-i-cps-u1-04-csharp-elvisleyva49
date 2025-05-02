@@ -1,0 +1,199 @@
+name: Build, Test, Analyze, and Publish NuGet
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build-test-analyze-payment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies for Payment.Domain
+        run: dotnet restore Payment/Payment.Domain/Payment.Domain.csproj
+
+      - name: Build Payment.Domain
+        run: dotnet build Payment/Payment.Domain/Payment.Domain.csproj --no-restore --configuration Release
+
+      - name: Run tests with coverage for Payment.Domain
+        run: dotnet test Payment/Payment.Domain/Payment.Domain.csproj --no-build --configuration Release --collect:"XPlat Code Coverage"
+
+      - name: Install ReportGenerator tool
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
+
+      - name: Generate coverage report for Payment.Domain
+        run: |
+          reportgenerator \
+            -reports:**/coverage.cobertura.xml \
+            -targetdir:coverage-report-payment \
+            -reporttypes:Html
+
+      - name: Upload coverage artifact for Payment.Domain
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report-payment
+          path: coverage-report-payment
+
+      - name: SonarCloud Scan for Payment.Domain
+        uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectBaseDir: .
+          args: >
+            -Dsonar.projectKey=elvisleyva_payment
+            -Dsonar.organization=elvisleyva
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  build-test-analyze-atm:
+    runs-on: ubuntu-latest
+    needs: build-test-analyze-payment
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies for ATM.Domain
+        run: dotnet restore ATM/ATM.Domain/ATM.Domain.csproj
+
+      - name: Build ATM.Domain
+        run: dotnet build ATM/ATM.Domain/ATM.Domain.csproj --no-restore --configuration Release
+
+      - name: Run tests with coverage for ATM.Domain
+        run: dotnet test ATM/ATM.Domain/ATM.Domain.csproj --no-build --configuration Release --collect:"XPlat Code Coverage"
+
+      - name: Install ReportGenerator tool
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
+
+      - name: Generate coverage report for ATM.Domain
+        run: |
+          reportgenerator \
+            -reports:**/coverage.cobertura.xml \
+            -targetdir:coverage-report-atm \
+            -reporttypes:Html
+
+      - name: Upload coverage artifact for ATM.Domain
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report-atm
+          path: coverage-report-atm
+
+      - name: SonarCloud Scan for ATM.Domain
+        uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectBaseDir: .
+          args: >
+            -Dsonar.projectKey=elvisleyva_payment
+            -Dsonar.organization=elvisleyva
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  publish-nuget-payment:
+    needs: build-test-analyze-atm
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies for Payment.Domain
+        run: dotnet restore Payment/Payment.Domain/Payment.Domain.csproj
+
+      - name: Build Payment.Domain
+        run: |
+          cd Payment/Payment.Domain
+          dotnet build Payment.Domain.csproj --configuration Release
+
+      - name: Crear directorio para empaquetado Payment.Domain
+        run: mkdir -p Payment/Payment.Domain/nupkg
+
+      - name: Empaquetar Payment.Domain
+        run: |
+          cd Payment/Payment.Domain
+          dotnet pack --no-build --configuration Release \
+            -p:PackageVersion=1.0.${{ github.run_number }} \
+            -o ./nupkg
+
+      - name: Configurar autenticación NuGet GitHub para Payment.Domain
+        run: |
+          dotnet nuget add source https://nuget.pkg.github.com/elvisleyva49/index.json \
+            --name "github" \
+            --username "elvisleyva49" \
+            --password "${{ secrets.GH_PACKAGES_TOKEN }}" \
+            --store-password-in-clear-text
+
+      - name: Publicar paquete Payment.Domain en GitHub Packages
+        run: |
+          cd Payment/Payment.Domain
+          dotnet nuget push "./nupkg/*.nupkg" \
+            --source "github" \
+            --api-key "${{ secrets.GH_PACKAGES_TOKEN }}" \
+            --skip-duplicate
+
+  publish-nuget-atm:
+    needs: publish-nuget-payment
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies for ATM.Domain
+        run: dotnet restore ATM/ATM.Domain/ATM.Domain.csproj
+
+      - name: Build ATM.Domain
+        run: |
+          cd ATM/ATM.Domain
+          dotnet build ATM.Domain.csproj --configuration Release
+
+      - name: Crear directorio para empaquetado ATM.Domain
+        run: mkdir -p ATM/ATM.Domain/nupkg
+
+      - name: Empaquetar ATM.Domain
+        run: |
+          cd ATM/ATM.Domain
+          dotnet pack --no-build --configuration Release \
+            -p:PackageVersion=1.0.${{ github.run_number }} \
+            -o ./nupkg
+
+      - name: Configurar autenticación NuGet GitHub para ATM.Domain
+        run: |
+          dotnet nuget add source https://nuget.pkg.github.com/elvisleyva49/index.json \
+            --name "github" \
+            --username "elvisleyva49" \
+            --password "${{ secrets.GH_PACKAGES_TOKEN }}" \
+            --store-password-in-clear-text
+
+      - name: Publicar paquete ATM.Domain en GitHub Packages
+        run: |
+          cd ATM/ATM.Domain
+          dotnet nuget push "./nupkg/*.nupkg" \
+            --source "github" \
+            --api-key "${{ secrets.GH_PACKAGES_TOKEN }}" \
+            --skip-duplicate

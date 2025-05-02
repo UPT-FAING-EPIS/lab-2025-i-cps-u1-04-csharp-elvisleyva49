@@ -1,0 +1,67 @@
+name: Crear y Publicar Release Automático
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Necesario para crear tags y releases
+      packages: write  # Necesario para publicar paquetes
+
+    steps:
+    - name: Descargar código
+      uses: actions/checkout@v4
+
+    - name: Configurar .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.x'
+
+    - name: Restaurar dependencias
+      run: |
+        dotnet restore Payment/Payment.Domain
+        dotnet restore ATM/ATM.Domain
+
+    - name: Compilar Payment.Domain
+      run: dotnet build Payment/Payment.Domain/Payment.Domain.csproj --configuration Release --no-restore
+
+    - name: Empaquetar Payment.Domain
+      run: |
+        mkdir -p Payment/Payment.Domain/nupkg
+        VERSION=1.0.${{ github.run_number }}
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
+        dotnet pack Payment/Payment.Domain/Payment.Domain.csproj --no-build --configuration Release \
+          -p:PackageVersion=$VERSION \
+          -o Payment/Payment.Domain/nupkg
+
+    - name: Compilar ATM.Domain
+      run: dotnet build ATM/ATM.Domain/ATM.Domain.csproj --configuration Release --no-restore
+
+    - name: Empaquetar ATM.Domain
+      run: |
+        mkdir -p ATM/ATM.Domain/nupkg
+        dotnet pack ATM/ATM.Domain/ATM.Domain.csproj --no-build --configuration Release \
+          -p:PackageVersion=$VERSION \
+          -o ATM/ATM.Domain/nupkg
+
+    - name: Crear tag automáticamente
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git fetch origin
+        git tag v${{ env.VERSION }}
+        git push origin v${{ env.VERSION }}
+
+    - name: Crear Release en GitHub
+      uses: softprops/action-gh-release@v1
+      with:
+        name: "Versión v${{ env.VERSION }}"
+        tag_name: v${{ env.VERSION }}
+        files: |
+          Payment/Payment.Domain/nupkg/*.nupkg
+          ATM/ATM.Domain/nupkg/*.nupkg
