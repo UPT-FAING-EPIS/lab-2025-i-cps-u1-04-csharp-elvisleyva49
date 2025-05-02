@@ -1,0 +1,52 @@
+{
+  "api/ATM.Domain.ATM.html": {
+    "href": "api/ATM.Domain.ATM.html",
+    "title": "Class ATM",
+    "summary": "Class ATM Namespace ATM.Domain Assembly ATM.Domain.dll Represents an Automated Teller Machine (ATM) that executes commands. public class ATM Inheritance object ATM Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ATM(ICommand) Initializes a new instance of the ATM class with a specified command. public ATM(ICommand command) Parameters command ICommand The command to be executed by the ATM. Methods Action() Executes the assigned command. public void Action()"
+  },
+  "api/ATM.Domain.Account.html": {
+    "href": "api/ATM.Domain.Account.html",
+    "title": "Class Account",
+    "summary": "Class Account Namespace ATM.Domain Assembly ATM.Domain.dll Represents a bank account within the ATM system. public class Account Inheritance object Account Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields MAX_INPUT_AMOUNT The maximum amount allowed for a single deposit. public const decimal MAX_INPUT_AMOUNT = 10000 Field Value decimal Properties AccountBalance Gets or sets the current balance of the account. public decimal AccountBalance { get; set; } Property Value decimal AccountNumber Gets or sets the unique number identifying the account. public int AccountNumber { get; set; } Property Value int Methods Deposit(decimal) Deposits a specified amount into the account balance. public void Deposit(decimal amount) Parameters amount decimal The amount to deposit. Exceptions ArgumentException Thrown when the amount exceeds the maximum allowed deposit. Withdraw(decimal) Withdraws a specified amount from the account balance. public void Withdraw(decimal amount) Parameters amount decimal The amount to withdraw. Exceptions ArgumentException Thrown when the amount exceeds the current balance."
+  },
+  "api/ATM.Domain.DepositCommand.html": {
+    "href": "api/ATM.Domain.DepositCommand.html",
+    "title": "Class DepositCommand",
+    "summary": "Class DepositCommand Namespace ATM.Domain Assembly ATM.Domain.dll Represents a deposit operation command for an account. public class DepositCommand : ICommand Inheritance object DepositCommand Implements ICommand Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors DepositCommand(Account, decimal) Initializes a new instance of the DepositCommand class. public DepositCommand(Account account, decimal amount) Parameters account Account The account where the deposit will be made. amount decimal The amount to deposit. Methods Execute() Executes the deposit operation on the associated account. public void Execute()"
+  },
+  "api/ATM.Domain.ICommand.html": {
+    "href": "api/ATM.Domain.ICommand.html",
+    "title": "Interface ICommand",
+    "summary": "Interface ICommand Namespace ATM.Domain Assembly ATM.Domain.dll Defines a command interface with an execution method. public interface ICommand Methods Execute() Executes the command's action. void Execute()"
+  },
+  "api/ATM.Domain.Tests.ATMTests.html": {
+    "href": "api/ATM.Domain.Tests.ATMTests.html",
+    "title": "Class ATMTests",
+    "summary": "Class ATMTests Namespace ATM.Domain.Tests Assembly ATM.Domain.Tests.dll Contains unit tests for the ATM operations using deposit and withdraw commands. public class ATMTests Inheritance object ATMTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GivenAccountAndDeposit_ThenExecute_ReturnsCorrectAmount() Tests that depositing into an account updates the balance correctly. [Test] public void GivenAccountAndDeposit_ThenExecute_ReturnsCorrectAmount() GivenAccountAndWithdraw_ThenExecute_ReturnsCorrectAmount() Tests that withdrawing from an account updates the balance correctly. [Test] public void GivenAccountAndWithdraw_ThenExecute_ReturnsCorrectAmount()"
+  },
+  "api/ATM.Domain.Tests.html": {
+    "href": "api/ATM.Domain.Tests.html",
+    "title": "Namespace ATM.Domain.Tests",
+    "summary": "Namespace ATM.Domain.Tests Classes ATMTests Contains unit tests for the ATM operations using deposit and withdraw commands."
+  },
+  "api/ATM.Domain.WithdrawCommand.html": {
+    "href": "api/ATM.Domain.WithdrawCommand.html",
+    "title": "Class WithdrawCommand",
+    "summary": "Class WithdrawCommand Namespace ATM.Domain Assembly ATM.Domain.dll Command that performs a withdrawal operation on an account. public class WithdrawCommand : ICommand Inheritance object WithdrawCommand Implements ICommand Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors WithdrawCommand(Account, decimal) Initializes a new instance of the WithdrawCommand class. public WithdrawCommand(Account account, decimal amount) Parameters account Account The account from which to withdraw. amount decimal The amount to withdraw. Methods Execute() Executes the withdrawal command. public void Execute()"
+  },
+  "api/ATM.Domain.html": {
+    "href": "api/ATM.Domain.html",
+    "title": "Namespace ATM.Domain",
+    "summary": "Namespace ATM.Domain Classes ATM Represents an Automated Teller Machine (ATM) that executes commands. Account Represents a bank account within the ATM system. DepositCommand Represents a deposit operation command for an account. WithdrawCommand Command that performs a withdrawal operation on an account. Interfaces ICommand Defines a command interface with an execution method."
+  },
+  "disenio.html": {
+    "href": "disenio.html",
+    "title": "",
+    "summary": "mermaid.md classDiagram class Account Account : +Int AccountNumber Account : +Decimal AccountBalance Account : +Withdraw() Void Account : +Deposit() Void class ATM ATM : +Action() Void class DepositCommand DepositCommand : +Execute() Void class ICommand ICommand : +Execute() Void class WithdrawCommand WithdrawCommand : +Execute() Void ICommand <|.. DepositCommand ICommand <|.. WithdrawCommand"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE.",
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  }
+}

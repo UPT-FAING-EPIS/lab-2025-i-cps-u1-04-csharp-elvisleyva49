@@ -1,0 +1,208 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Comportamiento.Domain
+  name: Comportamiento.Domain
+  href: api/Comportamiento.Domain.html
+  commentId: N:Comportamiento.Domain
+  fullName: Comportamiento.Domain
+  nameWithType: Comportamiento.Domain
+- uid: Comportamiento.Domain.CashPaymentStrategy
+  name: CashPaymentStrategy
+  href: api/Comportamiento.Domain.CashPaymentStrategy.html
+  commentId: T:Comportamiento.Domain.CashPaymentStrategy
+  fullName: Comportamiento.Domain.CashPaymentStrategy
+  nameWithType: CashPaymentStrategy
+- uid: Comportamiento.Domain.CashPaymentStrategy.Pay(System.Double)
+  name: Pay(double)
+  href: api/Comportamiento.Domain.CashPaymentStrategy.html#Comportamiento_Domain_CashPaymentStrategy_Pay_System_Double_
+  commentId: M:Comportamiento.Domain.CashPaymentStrategy.Pay(System.Double)
+  name.vb: Pay(Double)
+  fullName: Comportamiento.Domain.CashPaymentStrategy.Pay(double)
+  fullName.vb: Comportamiento.Domain.CashPaymentStrategy.Pay(Double)
+  nameWithType: CashPaymentStrategy.Pay(double)
+  nameWithType.vb: CashPaymentStrategy.Pay(Double)
+- uid: Comportamiento.Domain.CashPaymentStrategy.Pay*
+  name: Pay
+  href: api/Comportamiento.Domain.CashPaymentStrategy.html#Comportamiento_Domain_CashPaymentStrategy_Pay_
+  commentId: Overload:Comportamiento.Domain.CashPaymentStrategy.Pay
+  isSpec: "True"
+  fullName: Comportamiento.Domain.CashPaymentStrategy.Pay
+  nameWithType: CashPaymentStrategy.Pay
+- uid: Comportamiento.Domain.CreditCardPaymentStrategy
+  name: CreditCardPaymentStrategy
+  href: api/Comportamiento.Domain.CreditCardPaymentStrategy.html
+  commentId: T:Comportamiento.Domain.CreditCardPaymentStrategy
+  fullName: Comportamiento.Domain.CreditCardPaymentStrategy
+  nameWithType: CreditCardPaymentStrategy
+- uid: Comportamiento.Domain.CreditCardPaymentStrategy.Pay(System.Double)
+  name: Pay(double)
+  href: api/Comportamiento.Domain.CreditCardPaymentStrategy.html#Comportamiento_Domain_CreditCardPaymentStrategy_Pay_System_Double_
+  commentId: M:Comportamiento.Domain.CreditCardPaymentStrategy.Pay(System.Double)
+  name.vb: Pay(Double)
+  fullName: Comportamiento.Domain.CreditCardPaymentStrategy.Pay(double)
+  fullName.vb: Comportamiento.Domain.CreditCardPaymentStrategy.Pay(Double)
+  nameWithType: CreditCardPaymentStrategy.Pay(double)
+  nameWithType.vb: CreditCardPaymentStrategy.Pay(Double)
+- uid: Comportamiento.Domain.CreditCardPaymentStrategy.Pay*
+  name: Pay
+  href: api/Comportamiento.Domain.CreditCardPaymentStrategy.html#Comportamiento_Domain_CreditCardPaymentStrategy_Pay_
+  commentId: Overload:Comportamiento.Domain.CreditCardPaymentStrategy.Pay
+  isSpec: "True"
+  fullName: Comportamiento.Domain.CreditCardPaymentStrategy.Pay
+  nameWithType: CreditCardPaymentStrategy.Pay
+- uid: Comportamiento.Domain.DebitCardPaymentStrategy
+  name: DebitCardPaymentStrategy
+  href: api/Comportamiento.Domain.DebitCardPaymentStrategy.html
+  commentId: T:Comportamiento.Domain.DebitCardPaymentStrategy
+  fullName: Comportamiento.Domain.DebitCardPaymentStrategy
+  nameWithType: DebitCardPaymentStrategy
+- uid: Comportamiento.Domain.DebitCardPaymentStrategy.Pay(System.Double)
+  name: Pay(double)
+  href: api/Comportamiento.Domain.DebitCardPaymentStrategy.html#Comportamiento_Domain_DebitCardPaymentStrategy_Pay_System_Double_
+  commentId: M:Comportamiento.Domain.DebitCardPaymentStrategy.Pay(System.Double)
+  name.vb: Pay(Double)
+  fullName: Comportamiento.Domain.DebitCardPaymentStrategy.Pay(double)
+  fullName.vb: Comportamiento.Domain.DebitCardPaymentStrategy.Pay(Double)
+  nameWithType: DebitCardPaymentStrategy.Pay(double)
+  nameWithType.vb: DebitCardPaymentStrategy.Pay(Double)
+- uid: Comportamiento.Domain.DebitCardPaymentStrategy.Pay*
+  name: Pay
+  href: api/Comportamiento.Domain.DebitCardPaymentStrategy.html#Comportamiento_Domain_DebitCardPaymentStrategy_Pay_
+  commentId: Overload:Comportamiento.Domain.DebitCardPaymentStrategy.Pay
+  isSpec: "True"
+  fullName: Comportamiento.Domain.DebitCardPaymentStrategy.Pay
+  nameWithType: DebitCardPaymentStrategy.Pay
+- uid: Comportamiento.Domain.IPaymentStrategy
+  name: IPaymentStrategy
+  href: api/Comportamiento.Domain.IPaymentStrategy.html
+  commentId: T:Comportamiento.Domain.IPaymentStrategy
+  fullName: Comportamiento.Domain.IPaymentStrategy
+  nameWithType: IPaymentStrategy
+- uid: Comportamiento.Domain.IPaymentStrategy.Pay(System.Double)
+  name: Pay(double)
+  href: api/Comportamiento.Domain.IPaymentStrategy.html#Comportamiento_Domain_IPaymentStrategy_Pay_System_Double_
+  commentId: M:Comportamiento.Domain.IPaymentStrategy.Pay(System.Double)
+  name.vb: Pay(Double)
+  fullName: Comportamiento.Domain.IPaymentStrategy.Pay(double)
+  fullName.vb: Comportamiento.Domain.IPaymentStrategy.Pay(Double)
+  nameWithType: IPaymentStrategy.Pay(double)
+  nameWithType.vb: IPaymentStrategy.Pay(Double)
+- uid: Comportamiento.Domain.IPaymentStrategy.Pay*
+  name: Pay
+  href: api/Comportamiento.Domain.IPaymentStrategy.html#Comportamiento_Domain_IPaymentStrategy_Pay_
+  commentId: Overload:Comportamiento.Domain.IPaymentStrategy.Pay
+  isSpec: "True"
+  fullName: Comportamiento.Domain.IPaymentStrategy.Pay
+  nameWithType: IPaymentStrategy.Pay
+- uid: Comportamiento.Domain.PaymentContext
+  name: PaymentContext
+  href: api/Comportamiento.Domain.PaymentContext.html
+  commentId: T:Comportamiento.Domain.PaymentContext
+  fullName: Comportamiento.Domain.PaymentContext
+  nameWithType: PaymentContext
+- uid: Comportamiento.Domain.PaymentContext.ProcessPayment(System.Double)
+  name: ProcessPayment(double)
+  href: api/Comportamiento.Domain.PaymentContext.html#Comportamiento_Domain_PaymentContext_ProcessPayment_System_Double_
+  commentId: M:Comportamiento.Domain.PaymentContext.ProcessPayment(System.Double)
+  name.vb: ProcessPayment(Double)
+  fullName: Comportamiento.Domain.PaymentContext.ProcessPayment(double)
+  fullName.vb: Comportamiento.Domain.PaymentContext.ProcessPayment(Double)
+  nameWithType: PaymentContext.ProcessPayment(double)
+  nameWithType.vb: PaymentContext.ProcessPayment(Double)
+- uid: Comportamiento.Domain.PaymentContext.ProcessPayment*
+  name: ProcessPayment
+  href: api/Comportamiento.Domain.PaymentContext.html#Comportamiento_Domain_PaymentContext_ProcessPayment_
+  commentId: Overload:Comportamiento.Domain.PaymentContext.ProcessPayment
+  isSpec: "True"
+  fullName: Comportamiento.Domain.PaymentContext.ProcessPayment
+  nameWithType: PaymentContext.ProcessPayment
+- uid: Comportamiento.Domain.PaymentContext.SetPaymentStrategy(Comportamiento.Domain.IPaymentStrategy)
+  name: SetPaymentStrategy(IPaymentStrategy)
+  href: api/Comportamiento.Domain.PaymentContext.html#Comportamiento_Domain_PaymentContext_SetPaymentStrategy_Comportamiento_Domain_IPaymentStrategy_
+  commentId: M:Comportamiento.Domain.PaymentContext.SetPaymentStrategy(Comportamiento.Domain.IPaymentStrategy)
+  fullName: Comportamiento.Domain.PaymentContext.SetPaymentStrategy(Comportamiento.Domain.IPaymentStrategy)
+  nameWithType: PaymentContext.SetPaymentStrategy(IPaymentStrategy)
+- uid: Comportamiento.Domain.PaymentContext.SetPaymentStrategy*
+  name: SetPaymentStrategy
+  href: api/Comportamiento.Domain.PaymentContext.html#Comportamiento_Domain_PaymentContext_SetPaymentStrategy_
+  commentId: Overload:Comportamiento.Domain.PaymentContext.SetPaymentStrategy
+  isSpec: "True"
+  fullName: Comportamiento.Domain.PaymentContext.SetPaymentStrategy
+  nameWithType: PaymentContext.SetPaymentStrategy
+- uid: Comportamiento.Tests
+  name: Comportamiento.Tests
+  href: api/Comportamiento.Tests.html
+  commentId: N:Comportamiento.Tests
+  fullName: Comportamiento.Tests
+  nameWithType: Comportamiento.Tests
+- uid: Comportamiento.Tests.PaymentTests
+  name: PaymentTests
+  href: api/Comportamiento.Tests.PaymentTests.html
+  commentId: T:Comportamiento.Tests.PaymentTests
+  fullName: Comportamiento.Tests.PaymentTests
+  nameWithType: PaymentTests
+- uid: Comportamiento.Tests.PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException(System.Int32,System.Double)
+  name: GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException(int, double)
+  href: api/Comportamiento.Tests.PaymentTests.html#Comportamiento_Tests_PaymentTests_GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException_System_Int32_System_Double_
+  commentId: M:Comportamiento.Tests.PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException(System.Int32,System.Double)
+  name.vb: GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException(Integer, Double)
+  fullName: Comportamiento.Tests.PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException(int, double)
+  fullName.vb: Comportamiento.Tests.PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException(Integer, Double)
+  nameWithType: PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException(int, double)
+  nameWithType.vb: PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException(Integer, Double)
+- uid: Comportamiento.Tests.PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException*
+  name: GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException
+  href: api/Comportamiento.Tests.PaymentTests.html#Comportamiento_Tests_PaymentTests_GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException_
+  commentId: Overload:Comportamiento.Tests.PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException
+  isSpec: "True"
+  fullName: Comportamiento.Tests.PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException
+  nameWithType: PaymentTests.GivenAnInvalidPaymentType_WhenProcessPayment_ThrowsArgumentException
+- uid: Comportamiento.Tests.PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed(System.Int32,System.Double)
+  name: GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed(int, double)
+  href: api/Comportamiento.Tests.PaymentTests.html#Comportamiento_Tests_PaymentTests_GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed_System_Int32_System_Double_
+  commentId: M:Comportamiento.Tests.PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed(System.Int32,System.Double)
+  name.vb: GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed(Integer, Double)
+  fullName: Comportamiento.Tests.PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed(int, double)
+  fullName.vb: Comportamiento.Tests.PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed(Integer, Double)
+  nameWithType: PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed(int, double)
+  nameWithType.vb: PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed(Integer, Double)
+- uid: Comportamiento.Tests.PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed*
+  name: GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed
+  href: api/Comportamiento.Tests.PaymentTests.html#Comportamiento_Tests_PaymentTests_GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed_
+  commentId: Overload:Comportamiento.Tests.PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed
+  isSpec: "True"
+  fullName: Comportamiento.Tests.PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed
+  nameWithType: PaymentTests.GivenCashPayment_WhenProcessPayment_ThenPaymentIsProcessed
+- uid: Comportamiento.Tests.PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(System.Int32,System.Double)
+  name: GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(int, double)
+  href: api/Comportamiento.Tests.PaymentTests.html#Comportamiento_Tests_PaymentTests_GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed_System_Int32_System_Double_
+  commentId: M:Comportamiento.Tests.PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(System.Int32,System.Double)
+  name.vb: GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(Integer, Double)
+  fullName: Comportamiento.Tests.PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(int, double)
+  fullName.vb: Comportamiento.Tests.PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(Integer, Double)
+  nameWithType: PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(int, double)
+  nameWithType.vb: PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(Integer, Double)
+- uid: Comportamiento.Tests.PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed*
+  name: GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed
+  href: api/Comportamiento.Tests.PaymentTests.html#Comportamiento_Tests_PaymentTests_GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed_
+  commentId: Overload:Comportamiento.Tests.PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed
+  isSpec: "True"
+  fullName: Comportamiento.Tests.PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed
+  nameWithType: PaymentTests.GivenCreditCardPayment_WhenProcessPayment_ThenPaymentIsProcessed
+- uid: Comportamiento.Tests.PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(System.Int32,System.Double)
+  name: GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(int, double)
+  href: api/Comportamiento.Tests.PaymentTests.html#Comportamiento_Tests_PaymentTests_GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed_System_Int32_System_Double_
+  commentId: M:Comportamiento.Tests.PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(System.Int32,System.Double)
+  name.vb: GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(Integer, Double)
+  fullName: Comportamiento.Tests.PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(int, double)
+  fullName.vb: Comportamiento.Tests.PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(Integer, Double)
+  nameWithType: PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(int, double)
+  nameWithType.vb: PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed(Integer, Double)
+- uid: Comportamiento.Tests.PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed*
+  name: GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed
+  href: api/Comportamiento.Tests.PaymentTests.html#Comportamiento_Tests_PaymentTests_GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed_
+  commentId: Overload:Comportamiento.Tests.PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed
+  isSpec: "True"
+  fullName: Comportamiento.Tests.PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed
+  nameWithType: PaymentTests.GivenDebitCardPayment_WhenProcessPayment_ThenPaymentIsProcessed

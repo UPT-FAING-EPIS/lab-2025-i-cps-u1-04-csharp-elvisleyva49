@@ -1,0 +1,261 @@
+{
+  "source_base_path": "/home/runner/work/lab-2025-i-cps-u1-04-csharp-elvisleyva49/lab-2025-i-cps-u1-04-csharp-elvisleyva49/Payment",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.CashPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.CashPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.CashPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.CashPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Represents a payment strategy that handles cash payments.\nImplements the <xref href=\"Payment.Domain.IPaymentStrategy\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.CreditCardPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.CreditCardPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.CreditCardPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.CreditCardPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Represents a payment strategy that handles credit card payments.\nImplements the <xref href=\"Payment.Domain.IPaymentStrategy\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.DebitCardPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.DebitCardPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.DebitCardPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.DebitCardPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Represents a payment strategy that handles debit card payments.\nImplements the <xref href=\"Payment.Domain.IPaymentStrategy\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.IPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.IPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.IPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.IPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Defines the contract for payment strategies.\nAny payment method must implement this interface to define its specific payment behavior.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.PaymentContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.PaymentContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.PaymentContext",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.PaymentContext.yml\" sourcestartlinenumber=\"1\">Defines the payment context that uses a strategy for processing payments.\nThe context allows the client to choose a payment strategy at runtime and delegates\nthe payment process to the selected strategy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.PaymentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.PaymentService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.PaymentService",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.PaymentService.yml\" sourcestartlinenumber=\"1\">Defines the service for processing payments.\nThis class utilizes the Strategy pattern to select a payment method\nbased on the selected payment type at runtime.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.PaymentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.PaymentType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.PaymentType",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.PaymentType.yml\" sourcestartlinenumber=\"1\">Defines the payment types available for processing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.Tests.PaymentTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.Tests.PaymentTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.Tests.PaymentTests",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.Tests.PaymentTests.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"Payment.Domain.PaymentService\" data-throw-if-not-resolved=\"false\"></xref> class.\nThe tests validate the functionality of processing payments using different payment methods.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "disenio.md",
+      "output": {
+        ".html": {
+          "relative_path": "disenio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docfx_project/api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docfx_project/api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docfx_project/articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "docfx_project/articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docfx_project/articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docfx_project/articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "docfx_project/articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docfx_project/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docfx_project/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docfx_project/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docfx_project/toc.html"
+        },
+        ".json": {
+          "relative_path": "docfx_project/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

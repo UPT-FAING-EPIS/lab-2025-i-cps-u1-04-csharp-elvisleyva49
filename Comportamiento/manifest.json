@@ -1,0 +1,187 @@
+{
+  "source_base_path": "/home/runner/work/lab-2025-i-cps-u1-04-csharp-elvisleyva49/lab-2025-i-cps-u1-04-csharp-elvisleyva49/Comportamiento",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Comportaimento.md",
+      "output": {
+        ".html": {
+          "relative_path": "Comportaimento.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.CashPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.CashPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.CashPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Comportamiento.Domain.CashPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Implementación de la estrategia de pago en efectivo.\nEsta clase concreta realiza el pago utilizando el método de pago en efectivo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.CreditCardPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.CreditCardPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.CreditCardPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Comportamiento.Domain.CreditCardPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Implementación de la estrategia de pago con tarjeta de crédito.\nEsta clase concreta realiza el pago utilizando el método de pago con tarjeta de crédito.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.DebitCardPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.DebitCardPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.DebitCardPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Comportamiento.Domain.DebitCardPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Implementación de la estrategia de pago con tarjeta de débito.\nEsta clase concreta realiza el pago utilizando el método de pago con tarjeta de débito.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.IPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.IPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.IPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Comportamiento.Domain.IPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Interfaz que define el contrato para las estrategias de pago.\nCualquier clase que implemente esta interfaz debe proporcionar una implementación\npara el método <xref href=\"Comportamiento.Domain.IPaymentStrategy.Pay(System.Double)\" data-throw-if-not-resolved=\"false\"></xref> que permite realizar un pago.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.PaymentContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.PaymentContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain.PaymentContext",
+      "Summary": "<p sourcefile=\"api/Comportamiento.Domain.PaymentContext.yml\" sourcestartlinenumber=\"1\">Clase que representa el contexto en el que se utilizará una estrategia de pago.\nEsta clase delega el procesamiento del pago a la estrategia de pago proporcionada.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Domain",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Tests.PaymentTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Tests.PaymentTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Tests.PaymentTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Comportamiento.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Comportamiento.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Comportamiento.Tests",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "output.md",
+      "output": {
+        ".html": {
+          "relative_path": "output.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
