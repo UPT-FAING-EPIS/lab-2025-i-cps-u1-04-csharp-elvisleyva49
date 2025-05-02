@@ -16,7 +16,9 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: |
+            8.0.x
+            9.0.x  # Agrega soporte para .NET 9
 
       - name: Install DocFX
         run: dotnet tool install -g docfx
